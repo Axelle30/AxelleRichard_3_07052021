@@ -1,0 +1,27 @@
+@import "../utils/variables";
+
+.btn {
+    border-radius: $border-rad;
+    height: 20%;
+    width: 40%;
+    background: radial-gradient(ellipse at center, #FF79DA 0%, #DF8FE2 78%, #9356DC 100%);
+    z-index: 1;
+    position: relative;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        content: "";
+        background: radial-gradient(ellipse at center, #9356DC 0%, #DF8FE2 82%, #FF79DA 100%);
+    }
+}

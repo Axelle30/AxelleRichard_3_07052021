@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/*Définition des couleurs*/
+/*Définition des breakpoints*/
+/*Valeurs diverses*/
+/*Définition des polices d'écritures*/
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/Shrikhand-Regular.otf") format("truetype");
+}
+
+/*Définition de la taille de police*/
+html {
+  font-size: 12px;
+}
+
+/*Definition de la typographie des titres*/
+h1 {
+  font-family: "shrikhand";
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-family: "roboto";
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-family: "roboto";
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-family: "shrikhand";
+  color: #FFFF;
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-family: "roboto";
+  color: #FFFF;
+  font-size: 1.3rem;
+}
+
+/*Définition de la typographie des textes*/
+p {
+  font-family: "roboto";
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Définition des couleurs*/
+/*Définition des breakpoints*/
+/*Valeurs diverses*/
+.btn {
+  border-radius: 30px;
+  height: 20%;
+  width: 40%;
+  background: radial-gradient(ellipse at center, #FF79DA 0%, #DF8FE2 78%, #9356DC 100%);
+  z-index: 1;
+  position: relative;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btn::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  content: "";
+  background: radial-gradient(ellipse at center, #9356DC 0%, #DF8FE2 82%, #FF79DA 100%);
+}
+
+.blockMenu {
+  background-color: #FFFF;
+}
+
+footer {
+  background-color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Définition des couleurs*/
+/*Définition des breakpoints*/
+/*Valeurs diverses*/
+.index-header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.index-header__title {
+  background-color: #FFFF;
+  height: 45%;
+  -webkit-box-shadow: 2px 7px 17px -5px rgba(0, 0, 0, 0.71);
+          box-shadow: 2px 7px 17px -5px rgba(0, 0, 0, 0.71);
+}
+
+.index-header__location {
+  background-color: #c7c7c7;
+  height: 10%;
+  margin-top: -3%;
+}
+
+.instr__step {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-shadow: 5px 5px 15px 5px #c7c7c7;
+          box-shadow: 5px 5px 15px 5px #c7c7c7;
+  margin-bottom: 2%;
+}
+
+.instr__step__number {
+  color: #FFFF;
+  border-radius: 100px;
+  background-color: #9356DC;
+  margin-left: 20px;
+  height: 25px;
+  width: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5px 5px 0;
+}
+
+.instr__step__logo {
+  margin-left: 5px;
+}
+
+.instr__step__logo--pink {
+  color: #9356DC;
+}
+
+.instr__step h4 {
+  margin-left: 3%;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=main.css.map */

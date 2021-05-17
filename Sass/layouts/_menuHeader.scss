@@ -1,0 +1,14 @@
+.menu-header {
+    background-color: $white;
+    &__photo {
+        max-height: 300px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+    }
+    &__text {
+        font-family : "shrikhand";
+        font-size: 1.5rem;
+    }
+}

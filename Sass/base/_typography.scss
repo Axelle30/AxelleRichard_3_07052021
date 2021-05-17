@@ -1,0 +1,61 @@
+/*Définition des polices d'écritures*/
+
+@font-face{
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "shrikhand";
+    src: url("../fonts/Shrikhand-Regular.otf") format("truetype");
+}
+
+/*Définition de la taille de police*/
+
+html {
+    font-size: 12px;
+}
+
+/*Definition de la typographie des titres*/
+
+h1 {
+    font-family : "shrikhand";
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family : "roboto";
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family : "roboto";
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+h4 {
+    font-family : "roboto";
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-family : "shrikhand";
+    color: $white;
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-family : "roboto";
+    color: $white;
+    font-size: 1.3rem;
+}
+
+/*Définition de la typographie des textes*/
+
+p {
+    font-family: "roboto";
+}

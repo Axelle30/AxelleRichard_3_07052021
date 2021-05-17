@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.index-header {
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+     &__title{
+        background-color: $white;
+        height: 45%;
+        box-shadow: 2px 7px 17px -5px rgba(0,0,0,0.71);        
+    }
+    &__location {
+        background-color: $lightGrey;
+        height: 10%;
+        margin-top: -3%;;        
+    }
+}
