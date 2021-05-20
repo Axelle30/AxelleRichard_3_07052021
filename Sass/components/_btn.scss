@@ -2,17 +2,22 @@
 
 .btn {
     border-radius: $border-rad;
-    height: 20%;
-    width: 40%;
-    background: radial-gradient(ellipse at center, #FF79DA 0%, #DF8FE2 78%, #9356DC 100%);
+    height: 50px;
+    width: 200px;
+    background: $color-secondary;
     z-index: 1;
     position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
         &::after {
             opacity: 1;
         }
     }
     &::after {
+        border-radius: $border-rad;
         position: absolute;
         top: 0;
         right: 0;
@@ -23,5 +28,9 @@
         transition: opacity 250ms;
         content: "";
         background: radial-gradient(ellipse at center, #9356DC 0%, #DF8FE2 82%, #FF79DA 100%);
+    }
+    a {
+        color:white;
+        font-size: 1.45rem;
     }
 }

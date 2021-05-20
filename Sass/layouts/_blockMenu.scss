@@ -1,4 +1,119 @@
-.blockMenu {
-    background-color: $white;
-
+.block-menu {
+    margin-bottom: 6%;
+    width: 98%;
+    margin-left: 1%;
+    &__title {
+        border-bottom: 1px solid $color-tertiary;
+        margin-left: 5%;
+        width: 50px;
+    }
+    &__dish {
+        display: flex;
+        box-shadow: 5px 5px 15px 5px $lightGrey;
+        border-radius: $border-rad;
+        flex-direction: column;
+        margin-bottom: 5%;
+        position: relative;
+        &__title {
+            font-weight: bolder;
+            margin-left: 5%;
+        }
+        &__quote {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &--text {
+                margin-left: 5%;
+            }
+            &--price {
+                margin-right: 5%;
+                font-weight: bold;
+                transform: scale(1);
+            }
+        }
+        &__checked {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 90%;
+            margin-top: -15%;
+            font-size: 2.5rem;
+            z-index: 2;
+            &--logo {
+                color: #FFFF;
+                opacity: 0;
+            }
+            &--background {
+                background-color: $color-tertiary;
+                border-top-right-radius: $border-rad;
+                border-bottom-right-radius: $border-rad;
+                width:15%;
+                height: 100%;
+                position: absolute;
+                left: 85%;
+                transform: scale(0);
+                transform-origin: right;
+            }
+        }
+        &:hover {
+            >.block-menu__dish__quote {
+                >.block-menu__dish__quote--price {
+                    animation-name: dish-checked-price-shift;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            >.block-menu__dish__checked {
+                >.block-menu__dish__checked--logo {
+                    animation-name: dish-checked-logo-animation;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            >.block-menu__dish__checked--background {
+                animation-name: dish-checked-background-scale;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+.order-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+@keyframes dish-checked-logo-animation {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+}
+@keyframes dish-checked-price-shift {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-60px);
+    }
+}
+@keyframes dish-checked-appear-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes dish-checked-background-scale {
+    0% {
+        transform: scaleX(0.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }

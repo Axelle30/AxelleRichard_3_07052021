@@ -7,6 +7,8 @@ $black: #0000;
 $white: #FFFF;
 $lightGrey: #c7c7c7;
 $darkGrey: #3b3b3b;
+$lightGreen: #5FFF33;
+$darkGreen: #2F7B1A;
 
 /*Définition des breakpoints*/
 
@@ -14,6 +16,14 @@ $mobile-max-width: 450px;
 $tablet-min-width: 451px; 
 $tablet-max-width: 1000px;
 $desktop-min-width: 1001px;
+
+/*Variables relatives au animation*/
+
+$like-btn-duration: 400ms;
+
+$dish-appear-animation-duration: 1000ms;
+$dish-appear-animation-delay: 1000ms;
+$dish-appear-animation-Y-distance: 20px;
 
 /*Valeurs diverses*/
 $border-rad: 30px;

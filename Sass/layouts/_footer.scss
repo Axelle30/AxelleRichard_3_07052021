@@ -1,5 +1,15 @@
-footer {
+.footer {
     background-color: $darkGrey;
     display: flex;
-    justify-content: center;;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__title {
+        margin-left: 10%;
+    }
+    &__link {
+        a {
+        color:white;
+        margin-left: 10%;
+        }
+    }
 }

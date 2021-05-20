@@ -4,60 +4,119 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OHMYFOOD - À la Française</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" type="image/ico" href="favicon.ico"/>
+        <link rel="stylesheet" href="Sass/main.css" />
+        <link rel="icon" type="image/ico" href="images/logo/favicon.ico"/>
         <script src="https://kit.fontawesome.com/e4743f0c56.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
         <header class="menu-logo">
-            <h1>ohmyfood</h1>
+            <p class="menu_logo__return"><a href="index.html"><i class="fas fa-arrow-left"></i></a></p>
+            <h1 class="menu-logo__text">ohmyfood</h1>
         </header>
         <section class="menu-header">
-            <div class="menu-header__photo"><img src="images/restaurants/aLaFrancaise.jpg" alt="A la Francaise"></div>
+            <div class="menu-header__container"><img class="menu-header__photo" src="images/restaurants/aLaFrancaise.jpg" alt="A la Francaise"></div>
             <div class="menu-header__title">
                 <p class="menu-header__text">À la Française</p>
-                <p class="menu-header__heart"><i class="far fa-heart"></i></p>
+                <p class="menu-header__heart like-btn"><a href="#"><em class="like-btn--empty"><i class="far fa-heart"></em></i><em class="like-btn--full"><i class="fas fa-heart"></i></em></a></p>
+            </div>
+        </section>
+        <section>
+            <div class="block-menu">
+                <p class="block-menu__title">ENTRÉES</p>
+                <div class="block-menu__dish dish-appear dish-appear--order1">
+                    <p class="block-menu__dish__title">Tartare de poulpe acidulé</p>
+                    <div class="block-menu__dish__quote">
+                            <p class="block-menu__dish__quote--text">Aux zests d'orange</p>
+                            <p class="block-menu__dish__quote--price">25€</p>
+                        </div> 
+                        <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                        <div class="block-menu__dish__checked--background"></div>   
+                    </div>
+                <div class="block-menu__dish dish-appear dish-appear--order2">
+                    <p class="block-menu__dish__title">Velouté de légumes d'antan</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Carottes, panais, topinambour</p>
+                        <p class="block-menu__dish__quote--price">35€</p>
+                    </div>
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>
+                </div>
+                <div class="block-menu__dish dish-appear dish-appear--order3">
+                    <p class="block-menu__dish__title">Soupe à l'oignon</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Revisitée</p>
+                        <p class="block-menu__dish__quote--price">20€</p>
+                    </div>  
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
+                </div>
             </div>
             <div class="block-menu">
-                <p class="block-menu__title">ENTREES</p>
-                <div class="block-menu__dish">
-                    <div>
-                        <p class="block-menu__dish--title">Tartare de poulpe acidulé</p>
-                        <div class="block-menu__dish--quote">
-                            <p class="block-menu__dish--quoteText">Aux zests d'orange</p>
-                            <p class="block-menu__dish--quotePrice">25€</p>
-                        </div>
-                        <p class="block-menu__dish--quote"></p>
+                <p class="block-menu__title">PLATS</p>
+                <div class="block-menu__dish dish-appear dish-appear--order1">
+                    <p class="block-menu__dish__title">Coquilles Saint-Jacques</p>
+                    <div class="block-menu__dish__quote">
+                            <p class="block-menu__dish__quote--text">Accompagnées d'une purée de panais</p>
+                            <p class="block-menu__dish__quote--price">40€</p>
                     </div>    
-                    <p class="block-menu__dish--checked"></p>
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
                 </div>
-                <div class="block-menu__dish">
-                    <div>
-                        <p class="block-menu__dish--title">Velouté de légumes d'antan</p>
-                        <div class="block-menu__dish--quote">
-                            <p class="block-menu__dish--quoteText">Carottes, panais, topinambour</p>
-                            <p class="block-menu__dish--quotePrice">35€</p>
-                        </div>
-                        <p class="block-menu__dish--quote"></p>
-                    </div>    
-                    <p class="block-menu__dish--checked"></p>
+                <div class="block-menu__dish dish-appear dish-appear--order2">
+                    <p class="block-menu__dish__title">Magret de canard</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Et parmentier de pommes de terres</p>
+                        <p class="block-menu__dish__quote--price">35€</p>
+                    </div>
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>
                 </div>
-                <div class="block-menu__dish">
-                    <div>
-                        <p class="block-menu__dish--title">Soupe à l'oignon</p>
-                        <div class="block-menu__dish--quote">
-                            <p class="block-menu__dish--quoteText">Revisitée</p>
-                            <p class="block-menu__dish--quotePrice">20€</p>
-                        </div>
-                        <p class="block-menu__dish--quote"></p>
-                    </div>    
-                    <p class="block-menu__dish--checked"></p>
+                <div class="block-menu__dish dish-appear dish-appear--order3">
+                    <p class="block-menu__dish__title">Pigeonneau d'Illes-et-Vilaine</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Sur son lit de gnocchis aux légumes</p>
+                        <p class="block-menu__dish__quote--price">44€</p>
+                    </div>  
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
                 </div>
             </div>
-
+            <div class="block-menu">
+                <p class="block-menu__title">DESSERT</p>
+                <div class="block-menu__dish dish-appear dish-appear--order1">
+                    <p class="block-menu__dish__title">Pétales de violettes glacés</p>
+                    <div class="block-menu__dish__quote">
+                            <p class="block-menu__dish__quote--text">Et purée de noisettes</p>
+                            <p class="block-menu__dish__quote--price">18€</p>
+                    </div>    
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
+                </div>
+                <div class="block-menu__dish dish-appear dish-appear--order2">
+                    <p class="block-menu__dish__title">Fondant au chocolat</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Revisité</p>
+                        <p class="block-menu__dish__quote--price">22€</p>
+                    </div>
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
+                </div>
+                <div class="block-menu__dish dish-appear dish-appear--order3">
+                    <p class="block-menu__dish__title">Millefeuille croustillant</p>
+                    <div class="block-menu__dish__quote">
+                        <p class="block-menu__dish__quote--text">Myrtille et pâte d'amande</p>
+                        <p class="block-menu__dish__quote--price">23€</p>
+                    </div>  
+                    <div class="block-menu__dish__checked"><p class="block-menu__dish__checked--logo"><i class="far fa-check-circle"></i></p></div>
+                    <div class="block-menu__dish__checked--background"></div>   
+                </div>
+            </div>
+            <div class="order-btn">
+                <p class="btn"><a href="#rest-list">Commander</a></p>
+            </div>
         </section>
-        <footer>
+        <footer class="footer">
             <h5>ohmyfood</h5>
             <h6><a href="#"><i class="fas fa-utensils">Proposer un restaurant</i></a></h6>
             <h6><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></h6>

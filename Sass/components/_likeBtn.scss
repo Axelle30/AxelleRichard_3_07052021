@@ -1,0 +1,57 @@
+.like-btn {
+    position: relative;
+    &--empty {
+        opacity :1;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        &:hover {
+            animation-name: disapear-empty;
+            animation-duration: $like-btn-duration;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+    &--full {
+        color: #FFFF;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        &:hover {
+            animation-name : appear-full;
+            animation-duration : $like-btn-duration;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+@keyframes disapear-empty {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes appear-full {
+    0% {
+        opacity: 0;
+        color: #FFFF;
+    }
+    50% {
+        opacity: 0.5;
+        color: $color-secondary;
+    }
+    100% {
+        opacity: 1;
+        color: $color-primary;
+        transform: scale(1.1);
+    }
+}

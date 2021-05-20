@@ -1,14 +1,38 @@
+.menu-logo {
+    display: flex;
+    flex-direction: row;
+    a {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+    &__text {
+        margin-left: 45%;
+    }
+}
 .menu-header {
-    background-color: $white;
+    
     &__photo {
         max-height: 300px;
+        z-index: -1;
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     &__title {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        border-top-left-radius: $border-rad;
+        border-top-right-radius: $border-rad;
+        z-index: 2;
+        margin-top: -30px;
+        background-color: white;
     }
     &__text {
         font-family : "shrikhand";
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    &__heart {
+        font-size: 2rem;
     }
 }

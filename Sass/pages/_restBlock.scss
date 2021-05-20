@@ -1,0 +1,51 @@
+.rest-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: $border-rad;
+    max-height: 30%;
+    max-width: 90%;
+    margin-bottom: 20px;
+    box-shadow: -1px 5px 15px 5px $lightGrey;
+    margin-left: 5%;
+    &__image {
+        border-top-left-radius: $border-rad;
+        border-top-right-radius: $border-rad;
+        max-height: 250px;
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    &__new {
+        color: $darkGreen;
+        font-size: 1.2rem;
+        z-index: 1;
+        font-weight: bolder;
+        height: 20px;
+        width: 60px;
+        background-color: $lightGreen;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:85%;
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__text {
+            flex-direction: column;
+            margin-left: 15px;
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        &__heart {
+            color: black;
+            font-size: 2rem;
+            margin: 15px 15px 0 0;
+        }
+    }
+}

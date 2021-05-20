@@ -1,0 +1,42 @@
+.dish-appear {
+    opacity: 0;
+    transform: scale(1);
+    &--order1 {
+        animation-name: dish-appear-animation;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    &--order2 {
+        animation-name: dish-appear-animation;
+        animation-duration: $dish-appear-animation-duration;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    &--order3 {
+        animation-name: dish-appear-animation;
+        animation-duration: $dish-appear-animation-duration;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    &--order4 {
+        animation-name: dish-appear-animation;
+        animation-duration: $dish-appear-animation-duration;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes dish-appear-animation {
+    0% {
+        opacity: 0;
+        tranform: translateY(0)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}

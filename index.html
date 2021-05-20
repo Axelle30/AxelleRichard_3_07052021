@@ -5,18 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OHMYFOOD - Acceuil</title>
         <link rel="stylesheet" href="Sass/main.css" />
-        <link rel="icon" type="image/ico" href="favicon.ico"/>
+        <link rel="icon" type="image/ico" href="images/logo/favicon.ico"/>
         <script src="https://kit.fontawesome.com/e4743f0c56.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
-        <div class="loading-spinner"></div>
-        <header>
+        <div class="loading-spinner">
+            <div class ="loading-spinner loading-spinner--o"><p>o</p></div>
+            <div class ="loading-spinner loading-spinner--h"><p>h</p></div>
+            <div class ="loading-spinner loading-spinner--m"><p>m</p></div>
+            <div class ="loading-spinner loading-spinner--y"><p>y</p></div>
+            <div class ="loading-spinner loading-spinner--f"><p>f</p></div>
+            <div class ="loading-spinner loading-spinner--o2"><p>o</p></div>
+            <div class ="loading-spinner loading-spinner--o3"><p>o</p></div>
+            <div class ="loading-spinner loading-spinner--d"><p>d</p></div>
+        </div>
+        <div class="blur-target">
+        <header class="index-header">
             <div class="index-header__title"><h1>ohmyfood</h1></div>
-            <p class="index-header__location"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+            <div class="index-header__location"><p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p></div>
             <h2>Réservez le menu qui vous convient</h2>
             <p class="index-header__quote">Découvrez des restaurant d'exception séléctionnés par nos soins</p>
-            <p class="btn"><a href="#">Explorer nos restaurant</a></p>
+            <p class="btn"><a href="#rest-list">Explorer nos restaurants</a></p>
        </header>
        <section class="instr">
             <h2>Fonctionnement</h2>
@@ -36,59 +46,60 @@
                 <h4>Dégustez au restaurant</h4>
             </div>
        </section>
-       <section>
+       <section id="rest-list">
            <h2>Restaurants</h2>
-           <article class="rest-bloc">
-                <div class="rest-bloc__image"><img src="images/restaurants/laPaletteDuGout.jpg" alt="La Palette du Goût"/></div>
-                <p class="rest-bloc__new">Nouveau</p>
-                <div class="rest-bloc__title">
-                    <div>
+           <article class="rest-block">
+                <div class="rest-block__container"><a href="menu_laPaletteDuGout.html"><img class="rest-block__image" src="images/restaurants/laPaletteDuGout.jpg" alt="La Palette du Goût"/></a></div>
+                <p class="rest-block__new">Nouveau</p>
+                <div class="rest-block__title">
+                    <div class="rest-block__title__text">
                         <h3><a href="menu_laPaletteDuGout.html">La palette du goût</a></h3>
                         <p>Menilmontant</p>
                     </div>    
-                    <p class="rest-bloc__heart"><i class="far fa-heart"></i></p>
+                    <p class="rest-block__title__heart like-btn"><a href="#"><em class="like-btn--empty"><i class="far fa-heart"></em></i><em class="like-btn--full"><i class="fas fa-heart"></i></em></a></p>
                 </div>    
            </article>
-           <article class="rest-bloc">
-                <div class="rest-bloc__image"><img src="images/restaurants/laNoteEnchantee.jpg" alt="La Note Enchantée"/></div>
-                <p class="rest-bloc__new">Nouveau</p>
-                <div class="rest-bloc__title">
-                    <div>
+           <article class="rest-block">
+                <div class="rest-block__container"><a href="menu_laNoteEnchantee.html"><img class="rest-block__image" src="images/restaurants/laNoteEnchantee.jpg" alt="La Note Enchantée"/></a></div>
+                <p class="rest-block__new">Nouveau</p>
+                <div class="rest-block__title">
+                    <div class="rest-block__title__text">
                         <h3><a href="menu_laNoteEnchantee.html">La note enchantée</a></h3>
                         <p>Charonne</p>
                     </div>    
-                    <p class="rest-bloc__heart"><i class="far fa-heart"></i></p>
+                    <p class="rest-block__title__heart like-btn"><a href="#"><em class="like-btn--empty"><i class="far fa-heart"></em></i><em class="like-btn--full"><i class="fas fa-heart"></i></em></a></p>
                 </div>    
             </article>
-            <article class="rest-bloc">
-                <div class="rest-bloc__image"><img src="images/restaurants/aLaFrancaise.jpg" alt="À la Française"/></div>
-                <p class="rest-bloc__new">Nouveau</p>
-                <div class="rest-bloc__title">
-                    <div>
+            <article class="rest-block">
+                <div class="rest-block__container"><a href="menu_aLaFrancaise.html"><img class="rest-block__image" src="images/restaurants/aLaFrancaise.jpg" alt="À la Française"/></a></div>
+                <p class="rest-block__new">Nouveau</p>
+                <div class="rest-block__title">
+                    <div class="rest-block__title__text">
                         <h3><a href="menu_aLaFrancaise.html">À la Française</a></h3>
                         <p>Cité Rouge</p>
                     </div>    
-                    <p class="rest-bloc__heart"><i class="far fa-heart"></i></p>
+                    <p class="rest-block__title__heart like-btn"><a href="#"><em class="like-btn--empty"><i class="far fa-heart"></em></i><em class="like-btn--full"><i class="fas fa-heart"></i></em></a></p>
                 </div>    
             </article>
-            <article class="rest-bloc">
-                <div class="rest-bloc__image"><img src="images/restaurants/leDeliceDesSens.jpg" alt="Le délice des sens"/></div>
-                <p class="rest-bloc__new">Nouveau</p>
-                <div class="rest-bloc__title">
-                    <div>
+            <article class="rest-block">
+                <div class="rest-block__container"><a href="menu_leDeliceDesSens.html"><img class="rest-block__image" src="images/restaurants/leDeliceDesSens.jpg" alt="Le délice des sens"/></a></div>
+                <p class="rest-block__new">Nouveau</p>
+                <div class="rest-block__title">
+                    <div class="rest-block__title__text">
                         <h3><a href="menu_leDeliceDesSens.html">Le délice des sens</a></h3>
                         <p>Folie-Méricourt</p>
                     </div>    
-                    <p class="rest-bloc__heart"><i class="far fa-heart"></i></p>
+                    <p class="rest-block__title__heart like-btn"><a href="#"><em class="like-btn--empty"><i class="far fa-heart"></em></i><em class="like-btn--full"><i class="fas fa-heart"></i></em></a></p>
                 </div>    
-            </article>       
+            </article>
        </section>
-       <footer>
-            <h5>ohmyfood</h5>
-            <h6><a href="#"><i class="fas fa-utensils">Proposer un restaurant</i></a></h6>
-            <h6><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></h6>
-            <h6><a href="#">Mentions légales</a></h6>
-            <h6><a href="#">Contact</a></h6>
-       </footer> 
+       <footer class="footer">
+            <h5 class="footer__title">ohmyfood</h5>
+            <h6 class="footer__link"><a href="#"><i class="fas fa-utensils"> &nbsp Proposer un restaurant</i></a></h6>
+            <h6 class="footer__link"><a href="#"><i class="fas fa-hands-helping"></i> &nbsp Devenir partenaire</a></h6>
+            <h6 class="footer__link"><a href="#">Mentions légales</a></h6>
+            <h6 class="footer__link"><a href="#">Contact</a></h6>
+       </footer>
+       </div>
     </body>
 </html>
