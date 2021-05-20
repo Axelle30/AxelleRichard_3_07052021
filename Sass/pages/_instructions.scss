@@ -1,5 +1,7 @@
 .instr__step {
-    border-radius: 30px;
+    border-radius: $border-rad;
+    width: auto;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;

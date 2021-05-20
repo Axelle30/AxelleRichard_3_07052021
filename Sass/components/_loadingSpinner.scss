@@ -6,6 +6,7 @@ body {
     flex-direction: row;
     opacity: 1;
     z-index: 2;
+    margin-left: -15%;
     p {
         padding-right: 10px;
     }
@@ -129,16 +130,20 @@ body {
     0% {
         transform: translateY(50%);
         opacity: 0.5;
+        color: black;
     }
     50% {
         transform: translateY(0%);
         opacity: 1;
+        color:black;
     }
     75% {
         opacity: 0.8;
+        
     }
     100% {
         opacity: 0;
+        color: $color-secondary;
         z-index: -3;
     }
 }
