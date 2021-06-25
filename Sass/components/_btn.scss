@@ -2,6 +2,7 @@
 
 .btn {
     border-radius: $border-rad;
+    box-shadow: 2px 2px 12px 2px $lightGrey;
     height: 50px;
     width: 200px;
     background: $color-secondary;
@@ -27,7 +28,8 @@
         z-index: -1;
         transition: opacity 250ms;
         content: "";
-        background: lighten($color-secondary, 15%);
+        background: lighten($color-secondary, 5%);
+        box-shadow: 3px 3px 13px 3px $lightGrey;
     }
     a {
         color:white;
@@ -38,4 +40,15 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
+}
+
+
+
+@keyframes box-shadow-anim {
+    0% {
+        box-shadow: 2px 2px 12px 2px $lightGrey;
+    }
+    100% {
+        box-shadow: 5px 5px 15px 5px $darkGrey;
+    }
 }

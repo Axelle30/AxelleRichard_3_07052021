@@ -66,5 +66,8 @@ p {
     p {
         font-family : "shrikhand";
         font-size: 5rem;
+        @include mobile-rules {
+            font-size: 4rem;
+        }
     }
 }

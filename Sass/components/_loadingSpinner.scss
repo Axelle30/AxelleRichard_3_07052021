@@ -4,15 +4,25 @@ body {
 .loading-spinner {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     opacity: 1;
     z-index: 2;
     margin-left: -15%;
+    @include dekstop-rules {
+        margin-left: 35%;
+    }
+    @include mobile-rules {
+        margin-left: -30%;
+    }
+    @include tablet-rules  {
+        margin-left: 5%;
+    }
     p {
         padding-right: 10px;
     }
     &--o{
         animation-name: loading-spinner-animation;
-        animation-duration: 8s;
+        animation-duration: 4.5s;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
         animation-fill-mode: forwards ;
@@ -22,10 +32,13 @@ body {
         right: 0;
         bottom: 0;
         left: 100px;
+        @include mobile-rules {
+            left: 120px;
+        }
     }
     &--h{
         animation-name: loading-spinner-animation;
-        animation-duration: 7s;
+        animation-duration: 4s;
         animation-timing-function: ease-in-out;
         animation-delay: 0.5s;
         animation-fill-mode: forwards ;
@@ -35,11 +48,13 @@ body {
         right: 0;
         bottom: 0;
         left: 150px;
-        
+        @include mobile-rules {
+            left: 160px;
+        }
     }
     &--m{
         animation-name: loading-spinner-animation;
-        animation-duration: 6s;
+        animation-duration: 3.5s;
         animation-timing-function: ease-in-out;
         animation-delay: 1s;
         animation-fill-mode: forwards ;
@@ -49,10 +64,13 @@ body {
         right: 0;
         bottom: 0;
         left: 200px;
+        @include mobile-rules {
+            left: 205px;
+        }
     }
     &--y{
         animation-name: loading-spinner-animation;
-        animation-duration: 5s;
+        animation-duration: 3s;
         animation-timing-function: ease-in-out;
         animation-delay: 1.5s;
         animation-fill-mode: forwards ;
@@ -62,11 +80,14 @@ body {
         right: 0;
         bottom: 0;
         left: 270px;
+        @include mobile-rules {
+            left: 265px;
+        }
 
     }
     &--f{
         animation-name: loading-spinner-animation;
-        animation-duration: 4s;
+        animation-duration: 2.5s;
         animation-timing-function: ease-in-out;
         animation-delay: 2s;
         animation-fill-mode: forwards ;
@@ -76,10 +97,13 @@ body {
         right: 0;
         bottom: 0;
         left: 320px;
+        @include mobile-rules {
+            left: 305px;
+        }
     }
     &--o2{
         animation-name: loading-spinner-animation;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-timing-function: ease-in-out;
         animation-delay: 2.5s;
         animation-fill-mode: forwards ;
@@ -89,10 +113,13 @@ body {
         right: 0;
         bottom: 0;
         left: 360px;
+        @include mobile-rules {
+            left: 340px;
+        }
     }
     &--o3{
         animation-name: loading-spinner-animation;
-        animation-duration: 2s;
+        animation-duration: 1.5s;
         animation-timing-function: ease-in-out;
         animation-delay: 3s;
         animation-fill-mode: forwards ;
@@ -102,6 +129,9 @@ body {
         right: 0;
         bottom: 0;
         left: 410px;
+        @include mobile-rules {
+            left: 380px;
+        }
     }
     &--d{
         animation-name: loading-spinner-animation;
@@ -115,12 +145,15 @@ body {
         right: 0;
         bottom: 0;
         left: 460px;
+        @include mobile-rules {
+            left: 420px;
+        }
     }
 }
 .blur-target {
     animation-name: loading-spinner-body-blur;
     animation-duration: 2s;
-    animation-delay: 6s;
+    animation-delay: 4s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; 
     opacity: 0.1;
@@ -139,7 +172,6 @@ body {
     }
     75% {
         opacity: 0.8;
-        
     }
     100% {
         opacity: 0;

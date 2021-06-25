@@ -1,7 +1,7 @@
 .like-btn {
     position: relative;
     &--empty {
-        opacity :1;
+        opacity: 1;
         position: relative;
         top: 0;
         right: 0;
@@ -20,7 +20,7 @@
         opacity: 0;
         position: absolute;
         top: 0;
-        right: 8px;
+        right: 0;
         bottom: 0;
         left: 0;
         z-index: 1;
@@ -38,6 +38,7 @@
     }
     100% {
         opacity: 0;
+        color:#FFFF;
     }
 }
 @keyframes appear-full {
@@ -52,6 +53,6 @@
     100% {
         opacity: 1;
         color: $color-primary;
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
 }
