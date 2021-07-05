@@ -5,8 +5,14 @@
     &__title {
         border-bottom: 2px solid $color-tertiary;
         margin-left: 5%;
-        width: 100%;
+        width: 5%;
+        @include mobile-rules {
+            width: 15%;
+        }
         padding-left: 30px;
+        @include dekstop-rules {
+            margin-left: 30%;
+        }
     }
     &__dish {
         display: flex;
@@ -17,6 +23,8 @@
         position: relative;
         height: fit-content;
         @include dekstop-rules {
+            margin-left: 30%;
+            width: 30%;
             height: 80px;
             margin-bottom: 2%;
         }
@@ -75,9 +83,9 @@
                 margin-top: -10px;
                 margin-left: -30px;
                 @include dekstop-rules {
-                    margin-top: 125px;
+                    margin-top: -10px;
                     font-size: 3rem;
-                    margin-left: 20px;
+                    margin-left: -50px;
                 }
                 @include tablet-rules {
                     margin-top: 8px;
@@ -100,8 +108,8 @@
                 transform: scale(0);
                 transform-origin: right center;
                 @include dekstop-rules {
-                    width: 8%;
-                    left: 92%;
+                    width: 20%;
+                    left: 80%;
                 }
             }
         }
@@ -152,7 +160,7 @@
 }
 @keyframes dish-checked-price-shift {
     0% {
-        transform: translateX(0)
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-80px);
@@ -166,14 +174,6 @@
         transform: translateX(-100px);
     }
 }    
-@keyframes dish-checked-appear-animation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 @keyframes dish-checked-background-scale {
     0% {
         transform: scaleX(0.1);
