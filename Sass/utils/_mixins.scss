@@ -6,6 +6,22 @@
     }
 }
 
+@mixin mobile-rules-S {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+@mixin mobile-rules-M {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+@mixin mobile-rules-L {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
 @mixin tablet-rules {
     @media screen and (min-width: 500px) and (max-width: 769px) {
         @content;
@@ -14,6 +30,16 @@
 
 @mixin dekstop-rules {
     @media screen and (min-width: 770px) {
+        @content;
+    }
+}
+@mixin laptop-rules {
+    @media screen and (min-width: 770px) and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin between-rules {
+    @media screen and (min-width: 771px) and (max-width: 1024px) {
         @content;
     }
 }

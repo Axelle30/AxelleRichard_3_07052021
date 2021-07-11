@@ -3,13 +3,10 @@
     width: 98%;
     margin-left: 2%;
     &__title {
-        border-bottom: 2px solid $color-tertiary;
         margin-left: 5%;
-        width: 5%;
-        @include mobile-rules {
-            width: 15%;
-        }
-        padding-left: 30px;
+        width: 40px;
+        padding-left: -20px;
+        border-bottom: 2px solid $color-tertiary;
         @include dekstop-rules {
             margin-left: 30%;
         }
@@ -22,11 +19,18 @@
         margin-bottom: 5%;
         position: relative;
         height: fit-content;
+        @include between-rules {
+            width: 50%;
+        }
         @include dekstop-rules {
             margin-left: 30%;
             width: 30%;
             height: 80px;
             margin-bottom: 2%;
+        }
+        @include mobile-rules {
+            height: 80px;
+            max-height: 80px;
         }
         @include tablet-rules {
             height: 90px;
@@ -35,8 +39,16 @@
             font-weight: bolder;
             margin-left: 5%;
             font-size: 1.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            z-index: 3;
+            margin-bottom: 8px;
             @include dekstop-rules {
                 margin-top: 0.5%;
+            }
+            @include between-rules {
+                font-size: 1.3rem;
             }
         }
         &__quote {
@@ -54,12 +66,14 @@
                 margin-left: 5%;
                 font-size: 1.3rem;
                 z-index: 2;
-                text-overflow: ellipsis;
                 width: 90%;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 transform: scale(1);
+                @include between-rules {
+                    font-size: 1.1rem;
+                }
             }
             &--price {
                 font-size: 1.3rem;
@@ -67,6 +81,9 @@
                 font-weight: bold;
                 transform: scale(1);
                 z-index: 2;
+                @include between-rules {
+                    font-size: 1.2rem;
+                }
             }
         }
         &__checked {
@@ -78,19 +95,38 @@
             margin-top: -10%;
             z-index: 2;
             &--logo {
-                color: #FFFF;
+                justify-content: center;
+                align-items: center;
+                color: $color-tertiary;
+                border-radius: 100px;
+                background-color: #FFFF;
+                width: 30px;
+                height: 30px;
                 opacity: 0;
-                margin-top: -10px;
+                margin-top: -20px;
                 margin-left: -30px;
+                font-size: 1.5rem;
+                @include mobile-rules-S {
+                    margin-top: -40px;
+                }
+                @include mobile-rules-M {
+                    margin-top: -30px;
+                }
                 @include dekstop-rules {
-                    margin-top: -10px;
-                    font-size: 3rem;
-                    margin-left: -50px;
+                    margin-top: -5px;
+                    margin-left: -60px;
                 }
                 @include tablet-rules {
-                    margin-top: 8px;
-                    font-size: 3rem;
+                    margin-top: 13px;
                     margin-left: -35px;
+                }
+                @include laptop-rules {
+                    margin-top: -35px;
+                    margin-left: -25px;
+                }
+                i {
+                    margin-left: 5px;
+                    margin-top: 5px;
                 }
             }
             &--background {
@@ -114,6 +150,18 @@
             }
         }
         &:hover {
+            >.block-menu__dish__title {
+                animation-name: dish-checked-quote-text-ellipsis;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+                @include mobile-rules-S {
+                    animation-name: dish-checked-quote-text-ellipsis-little;
+                }
+                @include laptop-rules {
+                    animation-name: dish-checked-quote-text-ellipsis-little;
+                }
+            }
+            
             >.block-menu__dish__quote {
                 >.block-menu__dish__quote--price {
                     animation-name: dish-checked-price-shift;
@@ -188,5 +236,13 @@
     }
     100% {
         width: 60%;
+    }
+}
+@keyframes dish-checked-quote-text-ellipsis-little {
+    0% {
+        width: 90%;
+    }
+    100% {
+        width: 50%;
     }
 }

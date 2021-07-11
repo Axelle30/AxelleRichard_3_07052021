@@ -25,13 +25,20 @@
         color: $white;
         border-radius: 100px;
         background-color: $color-primary;
-        margin-left: 20px;
+        margin-left: -15px;
         height: 40px;
         width: 40px;
         justify-content: center;
         align-items: center;
+        @include mobile-rules {
+            height: 30px;
+            width: 30px;
+        }
         p {
             font-size: 1.5rem;
+            @include mobile-rules {
+                font-size: 1.2rem;
+            }
         }
     }
     &__logo {

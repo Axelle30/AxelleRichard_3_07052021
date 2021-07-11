@@ -2,18 +2,32 @@
     background-color: $darkGrey;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     width: 100%;
     &__title {
-
+        @include mobile-rules {
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
         margin-left: 45%;
         font-weight: lighter;
         font-size: 2rem;
     }
     &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -30px;
         a {
-        color:white;
-        margin-left: 43%;
-        align-items: center;
+            flex-direction: row;
+            width: 90%;
+            @include mobile-rules {
+                margin: 0 0 0 15px;
+                
+            }    
+            color:white;
+            margin-left: 43%;
         }
     }
 }

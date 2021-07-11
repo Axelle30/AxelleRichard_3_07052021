@@ -47,5 +47,12 @@
     }
     &__heart {
         font-size: 2rem;
+        margin-top: 1%;
+        @include tablet-rules {
+            margin-top: 2%;
+        }
+        @include mobile-rules {
+            margin-top: 5%;
+        }
     }
 }

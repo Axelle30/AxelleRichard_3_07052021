@@ -16,7 +16,8 @@
     @include dekstop-rules {
         max-height: 40%;
         max-width: 30%;
-        margin-left: 0%;
+        min-width: 30%;
+        margin-left: 2.5%;
     }
     &__image {
         border-top-left-radius: $border-rad;
@@ -40,6 +41,7 @@
         right:0;
         bottom:0;
         left:85%;
+        padding-left: 2px;
         @include mobile-rules {
             left: 75%;
         }

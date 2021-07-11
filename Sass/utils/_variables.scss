@@ -2,13 +2,15 @@
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
+$color-primary-lighten: lighten($color-primary, 10%);
+$color-secondary-lighten: lighten($color-secondary, 10%);
 $color-tertiary: #99E2D0;
 $black: #0000;
 $white: #FFFF;
 $lightGrey: #c7c7c7;
 $darkGrey: #3b3b3b;
-$lightGreen: #5FFF33;
-$darkGreen: #2F7B1A;
+$lightGreen: #99E2D0;
+$darkGreen: #0A6C6D;
 
 /*Définition des breakpoints*/
 

@@ -7,15 +7,22 @@ body {
     justify-content: flex-start;
     opacity: 1;
     z-index: 2;
+    margin-right: 0;
     margin-left: -15%;
     @include dekstop-rules {
         margin-left: 35%;
     }
-    @include mobile-rules {
-        margin-left: -30%;
+    @include mobile-rules-M {
+        margin-left: -40%;
     }
     @include tablet-rules  {
         margin-left: 5%;
+    }
+    @include mobile-rules-S {
+        margin-left: -29%;
+    }
+    @include mobile-rules-L {
+        margin-left: -18%;
     }
     p {
         padding-right: 10px;
@@ -35,6 +42,9 @@ body {
         @include mobile-rules {
             left: 120px;
         }
+        @include mobile-rules-S {
+            left: 120px;
+        }
     }
     &--h{
         animation-name: loading-spinner-animation;
@@ -50,6 +60,9 @@ body {
         left: 150px;
         @include mobile-rules {
             left: 160px;
+        }
+        @include mobile-rules-S {
+            left: 150px;
         }
     }
     &--m{
@@ -67,6 +80,9 @@ body {
         @include mobile-rules {
             left: 205px;
         }
+        @include mobile-rules-S {
+            left: 180px;
+        }
     }
     &--y{
         animation-name: loading-spinner-animation;
@@ -82,6 +98,9 @@ body {
         left: 270px;
         @include mobile-rules {
             left: 265px;
+        }
+        @include mobile-rules-S {
+            left: 225px;
         }
 
     }
@@ -100,6 +119,9 @@ body {
         @include mobile-rules {
             left: 305px;
         }
+        @include mobile-rules-S {
+            left: 255px;
+        }
     }
     &--o2{
         animation-name: loading-spinner-animation;
@@ -115,6 +137,9 @@ body {
         left: 360px;
         @include mobile-rules {
             left: 340px;
+        }
+        @include mobile-rules-S {
+            left: 275px;
         }
     }
     &--o3{
@@ -132,6 +157,9 @@ body {
         @include mobile-rules {
             left: 380px;
         }
+        @include mobile-rules-S {
+            left: 305px;
+        }
     }
     &--d{
         animation-name: loading-spinner-animation;
@@ -147,6 +175,9 @@ body {
         left: 460px;
         @include mobile-rules {
             left: 420px;
+        }
+        @include mobile-rules-S {
+            left: 330px;
         }
     }
 }

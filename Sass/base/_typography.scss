@@ -69,5 +69,8 @@ p {
         @include mobile-rules {
             font-size: 4rem;
         }
+        @include mobile-rules-S {
+            font-size: 3rem;
+        }
     }
 }
