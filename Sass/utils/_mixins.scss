@@ -43,3 +43,8 @@
         @content;
     }
 }
+@mixin dekstop-rules-L {
+    @media screen and (min-width: 1025px) {
+        @content;
+    }
+}
