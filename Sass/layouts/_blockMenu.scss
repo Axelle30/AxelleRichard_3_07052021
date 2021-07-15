@@ -65,7 +65,6 @@
             @include tablet-rules {
                 margin-top: -0%;
             }
-
             &--text {
                 margin-left: 5%;
                 font-size: 1.3rem;
@@ -111,11 +110,9 @@
                 margin-top: -20px;
                 margin-left: -30px;
                 font-size: 1.5rem;
-                @include mobile-rules-S {
-                    margin-top: -25px;
-                }
+           
                 @include mobile-rules-M {
-                    margin-top: -30px;
+                    margin-top: -40px;
                     
                 }
                 @include dekstop-rules {
