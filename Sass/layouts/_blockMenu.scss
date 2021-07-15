@@ -127,6 +127,10 @@
                     margin-top: -35px;
                     margin-left: -25px;
                 }
+                @include between-rules {
+                    margin-top: -20px;
+                    margin-left: -25px;
+                }
                 i {
                     margin-left: 5px;
                     margin-top: 5px;
@@ -176,6 +180,9 @@
                     @include tablet-rules {
                         animation-name: dish-checked-price-shift-large;
                     }
+                    @include between-rules {
+                        animation-name: dish-checked-price-shift;
+                    }
                 }
                 >.block-menu__dish__quote--text {
                     animation-name: dish-checked-quote-text-ellipsis-little;
@@ -214,7 +221,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-80px);
+        transform: translateX(-75px);
     }
 }
 @keyframes dish-checked-price-shift-large {
