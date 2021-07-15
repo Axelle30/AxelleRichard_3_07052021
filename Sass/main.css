@@ -1061,8 +1061,8 @@ body {
 
 @media screen and (min-width: 771px) and (max-width: 1024px) {
   .block-menu__dish:hover > .block-menu__dish__quote > .block-menu__dish__quote--price {
-    -webkit-animation-name: dish-checked-price-shift;
-            animation-name: dish-checked-price-shift;
+    -webkit-animation-name: dish-checked-price-shift-little;
+            animation-name: dish-checked-price-shift-little;
   }
 }
 
@@ -1160,6 +1160,28 @@ body {
   100% {
     -webkit-transform: translateX(-95px);
             transform: translateX(-95px);
+  }
+}
+
+@-webkit-keyframes dish-checked-price-shift-little {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@keyframes dish-checked-price-shift-little {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
 }
 

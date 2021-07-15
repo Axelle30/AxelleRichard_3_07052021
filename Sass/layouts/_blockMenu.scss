@@ -181,7 +181,7 @@
                         animation-name: dish-checked-price-shift-large;
                     }
                     @include between-rules {
-                        animation-name: dish-checked-price-shift;
+                        animation-name: dish-checked-price-shift-little;
                     }
                 }
                 >.block-menu__dish__quote--text {
@@ -231,7 +231,15 @@
     100% {
         transform: translateX(-95px);
     }
-}    
+}
+@keyframes dish-checked-price-shift-little {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-60px);
+    }
+}   
 @keyframes dish-checked-background-scale {
     0% {
         transform: scaleX(0.1);
