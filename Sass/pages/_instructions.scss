@@ -4,6 +4,9 @@
     }
 }
 .instr__step {
+    &--pink {
+        background-color: $instrPink;
+    }
     border-radius: $border-rad;
     width: auto;
     max-width: 90%;

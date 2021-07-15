@@ -1,9 +1,11 @@
 .rest-list {
+    background-color: $backgroundGrey;
     @include dekstop-rules {
         align-items: center;
     }
 }
 .rest-block {
+    background-color: $backgroundGrey;
     display: flex;
     flex-direction: column;
     position: relative;

@@ -1,6 +1,7 @@
 .menu-logo {
     display: flex;
     flex-direction: row;
+    background-color: #FFFF;
     a {
         font-size: 2rem;
         margin-left: 5%;
@@ -23,7 +24,7 @@
     }
 }
 .menu-header {
-    
+    background-color: $backgroundGrey;
     &__photo {
         max-height: 300px;
         z-index: -1;
@@ -32,6 +33,7 @@
         object-fit: cover;
     }
     &__title {
+        background-color: $backgroundGrey;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -39,9 +41,9 @@
         border-top-right-radius: $border-rad;
         z-index: 2;
         margin-top: -30px;
-        background-color: white;
     }
     &__text {
+        background-color: $backgroundGrey;
         font-family : "shrikhand";
         font-size: 2rem;
     }
